@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Outfit";
+}
+
+body {
+    background-color: black;
+    color: white;
+    padding: 15px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .menu-links ul {
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+    cursor: pointer;
+    transition: 1.5s ease;
+}
+
+.navbar .menu-links ul li a:hover {
+    color: #00ff00;
+    transition: 1.5s ease;
+}
+
+.navbar .menu-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar h2 {
+    background: linear-gradient(295deg, #df8dba, #865cf2);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 28px;
+}
+
+.main-body {
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.left-body {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 1.5em;
+}
+
+.right-body img {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    transition: 2s ease;
+}
+
+.left-body h2 {
+    font-size: 2em;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 15ch;
+    border-right: 1px solid white;
+    animation: typing 2s steps(15), cublink 0.5s infinite alternate;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 15ch;
+    }
+}
+
+@keyframes cublink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.right-body img:hover {
+    transform: scale(1.1);
+    transition: 2s ease;
+    box-shadow: 0 0 25px #00ff00;
+}
+
+.left-body h2 span {
+    background: linear-gradient(295deg, #df8dba, #865cf2);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.left-body button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.left-body button:hover {
+    border-color: #865cf2;
+    color: #865cf2;
+}
+
+.service-cards {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    background: linear-gradient(336deg, #1abbed, #18d237);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.service-cards div p {
+    margin-top: 10px;
+}
+
+.service-cards div img {
+    border-radius: 10px;
+    transition: 1.5s ease;
+}
+
+.service-cards div {
+    border-radius: 10px;
+    transition: 1.5s ease;
+}
+
+.service-cards .card-3 {
+    border-color: #00ff00;
+}
+
+.service-cards div img:hover {
+    outline: 1px solid #18d237;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.about {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.service-cards div a {
+    color: white;
+    text-decoration: none;
+}
+
+.about {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-1 {
+    width: 20%;
+    border: 1px solid white;
+    padding: 20px;
+}
+
+.skill-1 h2 {
+    text-align: center;
+    background: linear-gradient(336deg, #d501ff, #7109e7);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+
+.skill-2 {
+    width: 20%;
+    border: 1px solid white;
+    padding: 20px;
+}
+
+.skill-2 h2 {
+    text-align: center;
+    background: linear-gradient(336deg, #d501ff, #7109e7);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+
+.skill-3 {
+    width: 20%;
+    border: 1px solid white;
+    padding: 20px;
+}
+
+.skill-3 h2 {
+    text-align: center;
+    background: linear-gradient(336deg, #d501ff, #7109e7);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+
+.skill-4 {
+    width: 20%;
+    border: 1px solid white;
+    padding: 20px;
+}
+
+.skill-4 h2 {
+    text-align: center;
+    background: linear-gradient(336deg, #d501ff, #7109e7);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+
+.skill-5 {
+    width: 20%;
+    border: 1px solid white;
+    padding: 20px;
+}
+
+.skill-5 h2 {
+    text-align: center;
+    background: linear-gradient(336deg, #d501ff, #7109e7);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+
+.skill-6 {
+    width: 20%;
+    border: 1px solid white;
+    padding: 20px;
+}
+
+.skill-6 h2 {
+    text-align: center;
+    background: linear-gradient(336deg, #d501ff, #7109e7);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+
+.skill-7 {
+    width: 20%;
+    border: 1px solid white;
+    padding: 20px;
+}
+
+.skill-7 h2 {
+    text-align: center;
+    background: linear-gradient(336deg, #d501ff, #7109e7);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+
+.skill-8 {
+    width: 20%;
+    border: 1px solid white;
+    padding: 20px;
+}
+
+.skill-8 h2 {
+    text-align: center;
+    background: linear-gradient(336deg, #d501ff, #7109e7);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+
+.skill-1:hover {
+    border-color: #d501ff;
+    background-color: rgb(17, 16, 16);
+    cursor: pointer;
+}
+
+.skill-2:hover {
+    border-color: #d501ff;
+    background-color: rgb(17, 16, 16);
+    cursor: pointer;
+}
+
+.skill-3:hover {
+    border-color: #d501ff;
+    background-color: rgb(17, 16, 16);
+    cursor: pointer;
+}
+
+.skill-4:hover {
+    border-color: #d501ff;
+    background-color: rgb(17, 16, 16);
+    cursor: pointer;
+}
+
+.skill-5:hover {
+    border-color: #d501ff;
+    background-color: rgb(17, 16, 16);
+    cursor: pointer;
+}
+
+.skill-6:hover {
+    border-color: #d501ff;
+    background-color: rgb(17, 16, 16);
+    cursor: pointer;
+}
+
+.skill-7:hover {
+    border-color: #d501ff;
+    background-color: rgb(17, 16, 16);
+    cursor: pointer;
+}
+
+.skill-8:hover {
+    border-color: #d501ff;
+    background-color: rgb(17, 16, 16);
+    cursor: pointer;
+}
+
+/* Responsive Classes */
+
+@media screen and (max-width : 780px) {
+    .navbar h2 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .menu-links ul li {
+        display: none;
+    }
+
+    .main-body .left-body {
+        text-align: center;
+        justify-content: center;
+        padding: 5px;
+    }
+
+    .main-body .right-body img {
+        display: none;
+    }
+
+    .main-body .left-body h2 {
+        font-size: 42px;
+    }
+
+    .main-body .left-body button {
+        margin-bottom: 10%;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .about div {
+        width: 100%;
+        margin-left: 15%;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    padding: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: linear-gradient(336deg, #d501ff, #7109e7);
+    border-radius: 20px;
+}
