@@ -367,10 +367,13 @@ h1 {
 
     .about div {
         width: 100%;
-        margin-left: 15%;
         gap: 20px;
         justify-content: center;
         align-items: center;
+    }
+
+    .service-cards div img{
+        width: 400px;
     }
 }
 
