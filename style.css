@@ -66,9 +66,9 @@ body {
     font-size: 2em;
     overflow: hidden;
     white-space: nowrap;
-    width: 19ch;
+    width: 16ch;
     border-right: 1px solid white;
-    animation: typing 2s steps(19), cublink 0.5s infinite alternate;
+    animation: typing 2s steps(16), cublink 0.5s infinite alternate;
 }
 
 @keyframes typing {
@@ -77,7 +77,7 @@ body {
     }
 
     to {
-        width: 19ch;
+        width: 16ch;
     }
 }
 
