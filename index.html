@@ -16,8 +16,8 @@
         <div class="menu-links">
             <ul>
                 <li><a href="#body">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#services">Projects</a></li>
+                <li><a href="#about">Skills</a></li>
                 <li><a href="">Contact</a></li>
             </ul>
         </div>
@@ -39,43 +39,64 @@
         <!-- right side img -->
 
         <div class="right-body">
-            <img src="./image.webp" alt="" class="p-img">
+            <img src="./assets/image.webp" alt="" class="p-img">
         </div>
 
     </div>
 
     <!-- Services Page -->
 
-    <h1>Services</h1>
+    <h1>Projects</h1>
 
     <div class="service-cards" id="services">
 
 
         <div class="card-1">
             <a href="https://ajay-cart.onrender.com" target="_blank">
-                <img src="./pro-1.png" alt="" width="450" height="250" />
+                <img src="./assets/pro-1.png" alt="" width="450" height="250" />
                 <p>Mern E-commerce Website</p>
             </a>
         </div>
 
         <div class="card-2">
             <a href="https://tomato-ajay.onrender.com" target="_blank">
-                <img src="./pro-2.png" alt="" width="450" height="250" />
+                <img src="./assets/pro-2.png" alt="" width="450" height="250" />
                 <p>Tomato Food Website</p>
             </a>
         </div>
 
         <div class="card-3">
             <a href="https://snake-ajay.netlify.app" target="_blank">
-                <img src="./pro-3.png" alt="" width="450" height="250" />
+                <img src="./assets/pro-3.png" alt="" width="450" height="250" />
                 <p>Snake Game in HTML ,CSS ,JS</p>
             </a>
         </div>
 
         <div class="card-4">
             <a href="https://calc-ajay.netlify.app" target="_blank">
-                <img src="./pro-4.png" alt="" width="450" height="250" />
+                <img src="./assets/pro-4.png" alt="" width="450" height="250" />
                 <p>Calculator Application</p>
+            </a>
+        </div>
+
+        <div class="card-5">
+            <a href="https://ajay-job.onrender.com/" target="_blank">
+                <img src="./assets/pro-5.png" alt="" width="450" height="250" />
+                <p>Job Portal Apllication in MERN STACK</p>
+            </a>
+        </div>
+
+        <div class="card-6">
+            <a href="https://ajay-ai.netlify.app/" target="_blank">
+                <img src="./assets/pro-6.png" alt="" width="450" height="250" />
+                <p>Sitara Personal Virtual Voice Assistant</p>
+            </a>
+        </div>
+
+        <div class="card-7">
+            <a href="https://ajay-notes.onrender.com/" target="_blank">
+                <img src="./assets/pro-7.png" alt="" width="450" height="250" />
+                <p>Notes Application inn MERN STACK</p>
             </a>
         </div>
 
@@ -83,7 +104,7 @@
 
     <!-- About Section -->
 
-    <h1>About</h1>
+    <h1>Skills</h1>
 
     <div class="about" id="about">
 
@@ -160,7 +181,7 @@
 
         <div class="box-2">
             <h2>CSS</h2>
-            <p>>Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document
+            <p>Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document
                 written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements
                 should be rendered on screen, on paper, in speech, or on other media.</p>
         </div>
@@ -195,8 +216,121 @@
                 features for building web and mobile applications, particularly for server-side development.</p>
         </div>
 
+        <div class="box-7">
+            <h2>MONGO DB</h2>
+            <p>MongoDB is a popular NoSQL database that stores data in flexible, JSON-like documents within collections,
+                rather than using tables and rows like traditional relational databases. It's known for its scalability,
+                high performance, and ability to handle large amounts of unstructured or semi-structured data</p>
+        </div>
+
+        <div class="box-8">
+            <h2>MY SQL</h2>
+            <p>MySQL is a popular open-source relational database management system (RDBMS) that uses SQL (Structured
+                Query Language) to manage data stored in tables. It's known for its reliability, performance,
+                scalability, and ease of use, making it a favorite for web development and various enterprise
+                applications.</p>
+        </div>
+
+    </div>
+
+    <!-- Contact SEction (or) Fotter -->
+
+    <h1>Contact Me</h1>
+
+    <div class="contact" id="contact">
+        <h2>If you have any questions or want to get in touch, feel free to reach out!</h2>
+        <h3>Contact Details</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Field</th>
+                    <th>Details</th>
+                </tr>
+            <tbody>
+                <form method="POST" id="form">
+
+                    <input type="hidden" name="access_key" value="ae3a530c-195b-41d2-a265-516d3f0e9f84">
+                    <tr>
+                        <td>
+                            <label>Name : </label>
+                        </td>
+                        <td>
+                            <input type="text" name="name" placeholder="Enter Your Name" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label>Phone Number : </label>
+                        </td>
+                        <td>
+                            <input type="number" name="phone-no" placeholder="Enter Your Phone Number" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label>Feedback : </label>
+                        </td>
+                        <td>
+                            <input type="text" name="comments" placeholder="Put You Feedback Here" required />
+                        </td>
+                    </tr>
+                    <tr colspan="2" style="text-align: center;">
+                        <td>
+                            <button type="submit" style="width: 100%;">Submit Query</button>
+                        </td>
+                        <td>
+                            <button type="reset" style="background-color: red; color : white; width : 100%">Reset Query</button>
+                        </td>
+                    </tr>
+                </form>
+                <div id="result"></div>
+            </tbody>
+        </table>
     </div>
 
 </body>
+<script>
+    const form = document.getElementById('form');
+    const result = document.getElementById('result');
+
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        const formData = new FormData(form);
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+        result.innerHTML = "Please wait..."
+
+        fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: json
+        })
+            .then(async (response) => {
+                let json = await response.json();
+                if (response.status == 200) {
+                    alert("Form Submitted Successfully");
+                    result.innerHTML = "Form submitted successfully";
+                } else {
+                    console.log(response);
+                    result.innerHTML = json.message;
+                }
+            })
+            .catch(error => {
+                console.log(error);
+                result.innerHTML = "Something went wrong!";
+            })
+            .then(function () {
+                form.reset();
+                setTimeout(() => {
+                    result.style.display = "none";
+                }, 3000);
+            });
+    });
+</script>
 
 </html>

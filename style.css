@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -66,9 +68,22 @@ body {
     font-size: 2em;
     overflow: hidden;
     white-space: nowrap;
-    width: 16ch;
+    width: 19ch;
     border-right: 1px solid white;
-    animation: typing 2s steps(16), cublink 0.5s infinite alternate;
+    animation: typing 2s steps(19), cublink 0.5s infinite alternate;
+}
+
+.contact {
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+    background: linear-gradient(295deg, #df8dba, #865cf2);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 @keyframes typing {
@@ -77,7 +92,7 @@ body {
     }
 
     to {
-        width: 16ch;
+        width: 19ch;
     }
 }
 
@@ -123,8 +138,8 @@ body {
 
 h1 {
     text-align: center;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-top: 40px;
     background: linear-gradient(336deg, #1abbed, #18d237);
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -204,8 +219,8 @@ h1 {
     left: 50%;
     z-index: -1;
     padding: 5px;
-    background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
-    /*background-image: conic-gradient(from var(--angle) , transparent 50% , blue); */
+    /* background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545); */
+    background-image: conic-gradient(from var(--angle), transparent 50%, rgb(255, 51, 0));
     animation: 3s spin linear infinite;
 }
 
@@ -222,6 +237,30 @@ h1 {
 .box-1::before {
     filter: blur(1.5rem);
     opacity: 0.5;
+}
+
+.box-1 h2 {
+    color: rgb(255, 81, 0)
+}
+
+.box-2 h2 {
+    color: rgb(0, 102, 255);
+}
+
+.box-3 h2 {
+    color: yellow;
+}
+
+.box-4 h2 {
+    color: blue;
+}
+
+.box-5 h2 {
+    color: #00ff00;
+}
+
+.box-7 h2 {
+    color: green
 }
 
 .box-2 {
@@ -245,7 +284,8 @@ h1 {
     left: 50%;
     z-index: -1;
     padding: 5px;
-    background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+    /* background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545); */
+    background-image: conic-gradient(from var(--angle), transparent 50%, rgb(0, 140, 255));
     animation: 3s spin linear infinite;
 }
 
@@ -275,7 +315,8 @@ h1 {
     left: 50%;
     z-index: -1;
     padding: 5px;
-    background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+    /* background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545); */
+    background-image: conic-gradient(from var(--angle), transparent 50%, rgb(217, 255, 0));
     animation: 3s spin linear infinite;
 }
 
@@ -311,7 +352,7 @@ h1 {
     left: 50%;
     z-index: -1;
     padding: 5px;
-    background-image: conic-gradient(from var(--angle), transparent 50%, red);
+    background-image: conic-gradient(from var(--angle), transparent 50%, rgb(17, 0, 255));
     animation: 3s spin linear infinite;
 }
 
@@ -351,7 +392,7 @@ h1 {
     left: 50%;
     z-index: -1;
     padding: 5px;
-    background-image: conic-gradient(from var(--angle), transparent 50%, blue);
+    background-image: conic-gradient(from var(--angle), transparent 50%, rgb(30, 255, 0));
     animation: 3s spin linear infinite;
 }
 
@@ -381,7 +422,7 @@ h1 {
     left: 50%;
     z-index: -1;
     padding: 5px;
-    background-image: conic-gradient(from var(--angle), transparent 50%, #00ff00);
+    background-image: conic-gradient(from var(--angle), transparent 50%, #ffffff);
     animation: 3s spin linear infinite;
 }
 
@@ -390,7 +431,142 @@ h1 {
     opacity: 0.5;
 }
 
+.box-7 {
+    width: 20%;
+    margin-top: 30px;
+    background-color: #1c1f2b;
+    padding: 2em;
+    position: relative;
+    border-radius: 10px;
+}
 
+.box-7::after,
+.box-7::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    padding: 5px;
+    background-image: conic-gradient(from var(--angle), transparent 50%, #206400);
+    animation: 3s spin linear infinite;
+}
+
+.box-7::before {
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+
+.box-8 {
+    width: 20%;
+    margin-top: 30px;
+    background-color: #1c1f2b;
+    padding: 2em;
+    position: relative;
+    border-radius: 10px;
+}
+
+.box-8::after,
+.box-8::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    padding: 5px;
+    background-image: conic-gradient(from var(--angle), transparent 50%, #006eff);
+    animation: 3s spin linear infinite;
+}
+
+.box-8::before {
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+
+.contact h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    background: linear-gradient(295deg, #df8dba, #865cf2);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.contact table tbody td {
+    padding: 20px 40px;
+}
+
+.contact table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.contact table th,
+.contact table td {
+    border: 1px solid white;
+    text-align: center;
+}
+
+.contact table th {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+/* Contact Form Styles */
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.contact input {
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: #1c1f2b;
+    color: white;
+    width: 100%;
+}
+
+.contact input:focus {
+    outline: none;
+    border-color: #865cf2;
+}
+
+.contact button {
+    padding: 10px;
+    background-color: #48ff00;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #00ff00;
+    transition: 0.3s ease;
+}
+
+.contact #result {
+    margin-top: 20px;
+    color: #48ff00;
+    font-weight: bold;
+    text-align: center;
+}
 
 /* Responsive Classes */
 
